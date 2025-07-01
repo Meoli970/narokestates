@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-icon">🏠</span>
+            <span class="logo-text">Narok <span class="highlight">RE</span></span>
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script src="auth.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #74b9ff 0%, #dfe6e9 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            max-width: 370px;
+            margin: 70px auto;
+            padding: 48px 36px 36px 36px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(9,132,227,0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+            text-align: center;
+            position: relative;
+            transition: box-shadow 0.3s;
+        }
+        .container:hover {
+            box-shadow: 0 12px 40px rgba(9,132,227,0.16), 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 22px;
+            letter-spacing: 2px;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 2.3rem;
+            color: #0984e3;
+            filter: drop-shadow(0 2px 2px #dfe6e9);
+        }
+        .logo-text .highlight {
+            color: #0984e3;
+            letter-spacing: 1px;
+        }
+        h2 {
+            margin-bottom: 26px;
+            color: #0984e3;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        form input[type="email"],
+        form input[type="password"] {
+            width: 92%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1.5px solid #dfe6e9;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            background: #f8fafc;
+            transition: border 0.2s, box-shadow 0.2s;
+            outline: none;
+        }
+        form input[type="email"]:focus,
+        form input[type="password"]:focus {
+            border: 1.5px solid #0984e3;
+            box-shadow: 0 0 0 2px #d0e6fa;
+            background: #fff;
+        }
+        form button {
+            width: 98%;
+            padding: 12px;
+            background: linear-gradient(90deg, #0984e3 60%, #74b9ff 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.08rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 16px;
+            box-shadow: 0 2px 8px rgba(9,132,227,0.08);
+            transition: background 0.2s, transform 0.15s;
+        }
+        form button:hover {
+            background: linear-gradient(90deg, #74b9ff 0%, #0984e3 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        p {
+            margin-top: 22px;
+            font-size: 1rem;
+            color: #636e72;
+        }
+        a {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #636e72;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 98vw;
+                padding: 28px 8vw 24px 8vw;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>

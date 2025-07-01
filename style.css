@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #8d5524;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 2px 0 #e0c097, 0 4px 10px #bfa76f;
+}
+
+form {
+    border: 2px solid #bfa76f;
+    background: linear-gradient(135deg, #fffbe6 0%, #f7e9c4 100%);
+}
+
+input {
+    border: 1px solid #bfa76f;
+    border-radius: 3px;
+    background: #fffbe6;
+    color: #5c4326;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8d5524;
+    background: #f7e9c4;
+}
+
+button, input[type="submit"] {
+    background: linear-gradient(90deg, #bfa76f 0%, #8d5524 100%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(90deg, #8d5524 0%, #bfa76f 100%);
+}
+
+@media (max-width: 400px) {
+    form {
+        padding: 10px;
+        max-width: 95vw;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+}
